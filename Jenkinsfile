@@ -10,7 +10,7 @@ pipeline {
         stage('Build docker image'){
             steps{
                 script{
-                    sh 'docker build -t yokeshwarpr/yokeshnewimgapr21:v1 .'
+                    sh 'docker build --no-cache -t yokeshwarpr/yokeshnewimgapr21:v1 .'
                     sh 'docker images'
                 }
             }
